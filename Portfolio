@@ -1,77 +1,161 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Professional Portfolio</title>
+  <meta name="description" content="Professional Mechanical Engineering Portfolio">
+  <title>John Doe | Mechanical Engineer</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
       background-color: #f5faff;
       color: #333;
     }
     header {
       background-color: #0077b5;
       color: white;
-      padding: 2rem;
+      padding: 3rem 2rem;
       text-align: center;
     }
     nav {
       background: #e6f0fa;
       padding: 1rem;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
     nav a {
       color: #0077b5;
-      margin: 0 1rem;
+      margin: 0 1.5rem;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #004b7c;
     }
     section {
       max-width: 1000px;
       margin: 2rem auto;
       background: white;
-      padding: 2rem;
+      padding: 2.5rem;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
     h2 {
       color: #0077b5;
+      border-bottom: 2px solid #e6f0fa;
+      padding-bottom: 0.5rem;
+    }
+    .project {
+      margin-bottom: 2rem;
+    }
+    .project h3 {
+      margin-bottom: 0.5rem;
+      color: #004b7c;
+    }
+    .project-meta {
+      color: #666;
+      font-style: italic;
+      margin-bottom: 1rem;
     }
     footer {
       background-color: #0077b5;
       color: white;
       text-align: center;
-      padding: 1rem;
-      position: relative;
-      bottom: 0;
+      padding: 1.5rem;
       width: 100%;
+    }
+    a {
+      color: #0077b5;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+      nav a {
+        margin: 0 0.5rem;
+        display: inline-block;
+        padding: 0.5rem;
+      }
+      section {
+        padding: 1.5rem;
+        margin: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Thushar Sha S</h1>
-    <p>Mechanical Engineering Portfolio</p>
-  </header>  <nav>
-    <a href="#project1">Project 1</a>
-    <a href="#project2">Project 2</a>
-    <a href="#project3">Project 3</a>
+    <h1>John Doe</h1>
+    <p>Mechanical Engineer | CAD Specialist | Product Designer</p>
+  </header>
+  
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
-  </nav>  <section id="project1">
-    <h2>Project 1 Title</h2>
-    <p>Description and details of the first project. Include tools, methods, and outcomes.</p>
-  </section>  <section id="project2">
-    <h2>Project 2 Title</h2>
-    <p>Description and details of the second project. Focus on innovation or problem-solving elements.</p>
-  </section>  <section id="project3">
-    <h2>Project 3 Title</h2>
-    <p>Details of the third project, emphasizing engineering skills and application.</p>
-  </section>  <section id="contact">
+  </nav>
+  
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate mechanical engineer with 5 years of experience in product design, thermal analysis, and mechanical systems. My expertise includes CAD modeling, finite element analysis, and prototyping. I thrive on solving complex engineering challenges and bringing innovative products to life.</p>
+  </section>
+  
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    
+    <div class="project" id="project1">
+      <h3>Automotive Cooling System Redesign</h3>
+      <p class="project-meta">Tools: SolidWorks, ANSYS, MATLAB | Duration: 6 months</p>
+      <p>Redesigned the cooling system for a hybrid electric vehicle, improving thermal efficiency by 22% while reducing weight by 15%. Conducted extensive CFD analysis to optimize airflow and minimize pressure drops.</p>
+    </div>
+    
+    <div class="project" id="project2">
+      <h3>Robotic Prosthetic Hand</h3>
+      <p class="project-meta">Tools: Fusion 360, 3D Printing, Arduino | Duration: 4 months</p>
+      <p>Developed a low-cost robotic prosthetic hand with customizable grip patterns. Implemented force feedback sensors and myoelectric controls, achieving 85% of natural hand functionality at 30% of commercial costs.</p>
+    </div>
+    
+    <div class="project" id="project3">
+      <h3>Industrial Conveyor System Optimization</h3>
+      <p class="project-meta">Tools: AutoCAD, Siemens NX, Python | Duration: 8 months</p>
+      <p>Optimized a manufacturing conveyor system that increased throughput by 40% while reducing energy consumption by 18%. Implemented predictive maintenance algorithms that decreased downtime by 35%.</p>
+    </div>
+  </section>
+  
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>CAD Software:</strong> SolidWorks, AutoCAD, Fusion 360, Siemens NX</li>
+      <li><strong>Analysis Tools:</strong> ANSYS, COMSOL, MATLAB, LabVIEW</li>
+      <li><strong>Manufacturing:</strong> CNC machining, 3D printing, GD&T, DFM</li>
+      <li><strong>Programming:</strong> Python, C++, Arduino</li>
+      <li><strong>Other:</strong> FEA, CFD, Thermal Analysis, Project Management</li>
+    </ul>
+  </section>
+  
+  <section id="contact">
     <h2>Contact</h2>
-    <p>Connect with me on <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>.</p>
-  </section>  <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <p>Let's connect to discuss engineering opportunities or collaborations:</p>
+    <ul>
+      <li>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/johndoe-mech" target="_blank">linkedin.com/in/johndoe-mech</a></li>
+      <li>Phone: (123) 456-7890</li>
+    </ul>
+  </section>
+  
+  <footer>
+    <p>&copy; 2023 John Doe. All rights reserved.</p>
   </footer>
 </body>
 </html>
