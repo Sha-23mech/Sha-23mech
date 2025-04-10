@@ -1,0 +1,77 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5faff;
+      color: #333;
+    }
+    header {
+      background-color: #0077b5;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      background: #e6f0fa;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: #0077b5;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #0077b5;
+    }
+    footer {
+      background-color: #0077b5;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p>Mechanical Engineering Portfolio</p>
+  </header>  <nav>
+    <a href="#project1">Project 1</a>
+    <a href="#project2">Project 2</a>
+    <a href="#project3">Project 3</a>
+    <a href="#contact">Contact</a>
+  </nav>  <section id="project1">
+    <h2>Project 1 Title</h2>
+    <p>Description and details of the first project. Include tools, methods, and outcomes.</p>
+  </section>  <section id="project2">
+    <h2>Project 2 Title</h2>
+    <p>Description and details of the second project. Focus on innovation or problem-solving elements.</p>
+  </section>  <section id="project3">
+    <h2>Project 3 Title</h2>
+    <p>Details of the third project, emphasizing engineering skills and application.</p>
+  </section>  <section id="contact">
+    <h2>Contact</h2>
+    <p>Connect with me on <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>.</p>
+  </section>  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
